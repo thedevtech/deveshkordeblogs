@@ -3,6 +3,8 @@ import Navigation from "./components/Navigation.js";
 import Particles from "react-particles-js";
 import BlogCards from "./components/BlogCard";
 import Footer from "./components/Footer";
+import BlogTemplate from "./components/BlogTemplate";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const particleOptions = {
   particles: {
@@ -112,14 +114,22 @@ const particleOptions = {
 function App() {
   return (
     <div className="App">
-      <Particles
-        params={particleOptions}
-        height="100vh"
-        className="particles"
-      />
-      <Navigation />
-      <BlogCards />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route path="/blogs" component={BlogTemplate} />
+          <Route path="/">
+            <Particles
+              params={particleOptions}
+              height="100vh"
+              className="particles"
+            />
+
+            <Navigation />
+            <BlogCards />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

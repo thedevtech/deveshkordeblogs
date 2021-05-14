@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import "./BlogCard.css";
+import { Link } from "react-router-dom";
 
 const BlogCard = () => {
   return (
@@ -32,7 +33,12 @@ const BlogCard = () => {
               works in Javascript
             </div>
             <div className="cardButton">
-              <button className="readButton">Read</button>
+              <Link
+                to="/blogs"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <button className="readButton">Read</button>
+              </Link>
             </div>
           </div>
         </div>
