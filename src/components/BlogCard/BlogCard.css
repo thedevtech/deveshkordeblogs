@@ -1,0 +1,140 @@
+.blogContainer {
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blogBody {
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.googleAds {
+  height: 20vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.blogData {
+  height: 90%;
+  width: 75%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 25px 25px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.blogCard {
+  height: 55vh;
+  width: 22vw;
+  background-color: transparent;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 2px grey;
+}
+.cardImage {
+  height: 40%;
+  width: 100%;
+  background-color: transparent;
+}
+.blogImage {
+  text-align: center;
+}
+.cardAssets {
+  height: 10%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardCategory {
+  height: auto;
+  width: auto;
+  padding: 4px 4px;
+  margin-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardReadingTime {
+  height: 80%;
+  width: auto;
+  background-color: transparent;
+  margin-right: 15px;
+  color: grey;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardHeading {
+  height: 15%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.cardDescription {
+  height: 22%;
+  width: 90%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: grey;
+}
+.cardButton {
+  height: 14%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.readButton {
+  width: 90px;
+  padding: 8px 8px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 786px) {
+  [class*="blogContainer"] {
+    height: auto;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  [class*="blogData"] {
+    display: block;
+  }
+  [class*="blogData"] {
+    width: auto;
+    padding: 0px;
+  }
+  [class*="blogCard"] {
+    height: 60vh;
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+}

@@ -5,10 +5,6 @@ new Typewriter();
 const Navigation = () => {
   return (
     <div className="navContainer">
-      <div className="nav">
-        <div className="logo"></div>
-        <div className="subscription"></div>
-      </div>
       <div className="navHeading">
         <div className="headingData">Welcome to Devesh Korde Blogs</div>
         <div className="line"></div>

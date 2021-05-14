@@ -2,6 +2,7 @@ import "./App.css";
 import Navigation from "./components/Navigation.js";
 import Particles from "react-particles-js";
 import BlogCards from "./components/BlogCard";
+import Footer from "./components/Footer";
 
 const particleOptions = {
   particles: {
@@ -118,6 +119,7 @@ function App() {
       />
       <Navigation />
       <BlogCards />
+      <Footer />
     </div>
   );
 }
