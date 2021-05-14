@@ -1,0 +1,88 @@
+.particles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.navContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.nav {
+  height: 10vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  height: 80%;
+  width: 10%;
+  background-color: transparent;
+}
+.subscription {
+  height: 80%;
+  width: 60%;
+  background-color: transparent;
+}
+.navHeading {
+  height: auto;
+  width: 60vw;
+  background-color: transparent;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.headingData {
+  height: 40%;
+  width: auto;
+  padding: 8px 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.line {
+  height: 2px;
+  width: 50%;
+  background-color: #00a6ff;
+}
+.descriptionData {
+  height: auto;
+  width: 100%;
+  padding: 8px 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 786px) {
+  [class*="navHeading"] {
+    width: 68vw;
+  }
+  [class*="headingData"] {
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  [class*="descriptionData"] {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
